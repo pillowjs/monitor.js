@@ -1,0 +1,13 @@
+{
+  "name": "monitor.js",
+  "description": "monitor.js",
+  "keywords": ["monitor"],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/xudafeng/monitor.js.git"
+  },
+  "pre-commit": [
+    "jshint"
+  ],
+  "license": "MIT"
+}
