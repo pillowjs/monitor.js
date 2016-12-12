@@ -19,7 +19,6 @@ var fpsBoard_2 = new FPSBoard({
     position: 'absolute'
   }
 });
-
 var timer_1 = new Timer();
 timer_1.update(function() {
   fpsBoard_1.tick();

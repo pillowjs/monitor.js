@@ -55,22 +55,22 @@
       context.font = padding + 'px';
       context.fillStyle = this.options.textColor;
       context.fillText('fps: ' + fps, padding, textHeight + padding);
-      context.fillRect(this.options.width - 1, this.options.height - height, 1, height);
-      this._imgData && context.putImageData(this._imgData, 0, paddingTop);
-      this._imgData = context.getImageData(1, paddingTop, this.options.width - 1, this.options.height - paddingTop);
+      context.fillRect(this.options.width - 1, this.options.height - height, 1 * this._pixelRatio, height);
+      this._imgData && context.putImageData(this._imgData, 0, paddingTop * this._pixelRatio);
+      this._imgData = context.getImageData(1 * this._pixelRatio, paddingTop * this._pixelRatio, (this.options.width - 1) * this._pixelRatio, (this.options.height - paddingTop) * this._pixelRatio);
     }.bind(this), 16);
   };
 
   var create = function() {
-    var pixelRatio = Math.floor(window.devicePixelRatio) || 1;
     var canvas = document.createElement('canvas');
     var width = this.options.width;
     var height = this.options.height;
     canvas.style.cssText = 'width:' + width + 'px;height:' + height + 'px;';
-    canvas.width = width;
-    canvas.height = height;
+    canvas.width = width * this._pixelRatio;
+    canvas.height = height * this._pixelRatio;
 
     var context = canvas.getContext('2d');
+    context.scale(this._pixelRatio, this._pixelRatio);
 
     var container = document.createElement('div');
     var styles = {
@@ -108,8 +108,9 @@
     this.options = opts;
     this._now = null;
     this._fps = 0;
-    this._context = create.call(this);
     this._imgData = null;
+    this._pixelRatio = Math.floor(window.devicePixelRatio) || 1;
+    this._context = create.call(this);
   }
 
   FPSBoard.prototype.tick = function() {
