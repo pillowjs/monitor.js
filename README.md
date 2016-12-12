@@ -19,6 +19,10 @@ var FPSBoard = Monitor.FPSBoard;
 - timer point fps
 - device Pixel Ratio
 
+## CDN
+
+[npmcdn link](//npmcdn.com/monitor.js@1.0.0/monitor.js)
+
 ## License
 
 The MIT License (MIT)

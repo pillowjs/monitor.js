@@ -1,5 +1,6 @@
 {
   "name": "monitor.js",
+  "version": "1.0.0",
   "description": "monitor.js",
   "keywords": ["monitor"],
   "repository": {
