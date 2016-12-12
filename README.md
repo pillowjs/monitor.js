@@ -17,11 +17,10 @@ var FPSBoard = Monitor.FPSBoard;
 ## TODO
 
 - timer point fps
-- device Pixel Ratio
 
 ## CDN
 
-[npmcdn link](//npmcdn.com/monitor.js@1.0.0/monitor.js)
+[npmcdn link](//npmcdn.com/monitor.js@latest/monitor.js)
 
 ## License
 
