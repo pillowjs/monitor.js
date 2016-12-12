@@ -7,6 +7,18 @@
 
 > performance monitor for browser runtime
 
+## Usage
+
+```js
+var Timer = Monitor.Timer;
+var FPSBoard = Monitor.FPSBoard;
+```
+
+## TODO
+
+- timer point fps
+- device Pixel Ratio
+
 ## License
 
 The MIT License (MIT)
