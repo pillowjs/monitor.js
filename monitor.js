@@ -93,6 +93,8 @@
 
     container.appendChild(canvas);
     this.options.container.appendChild(container);
+    context.scale(2, 2);
+    context.scale(0.5, 0.5);
     return context;
   };
 
