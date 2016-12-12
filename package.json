@@ -1,7 +1,7 @@
 {
   "name": "monitor.js",
-  "version": "1.0.0",
-  "description": "monitor.js",
+  "version": "1.0.1",
+  "description": "monitor",
   "keywords": ["monitor"],
   "repository": {
     "type": "git",

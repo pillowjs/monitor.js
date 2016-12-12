@@ -17,6 +17,7 @@ var FPSBoard = Monitor.FPSBoard;
 ## TODO
 
 - timer point fps
+- paused
 
 ## CDN
 
