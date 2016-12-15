@@ -22,7 +22,15 @@ var fpsBoard_2 = new FPSBoard({
 var timer_1 = new Timer();
 timer_1.update(function() {
   fpsBoard_1.tick();
-  fpsBoard_2.tick();
 });
 
 timer_1.start();
+
+var timer_2 = new Timer({
+  fps: 30
+});
+timer_2.update(function() {
+  fpsBoard_2.tick();
+});
+
+timer_2.start();

@@ -8,6 +8,7 @@
     this._paused = false;
     this._now = null;
     this._fps = -1;
+    this._interval = 1000 / opts.fps;
   }
 
   Timer.prototype.update = function(handle) {
@@ -15,7 +16,8 @@
   };
 
   Timer.prototype.start = function() {
-    var loop = function() {
+    var targetTime = (new Date).getTime() + this._interval;
+    var loop = (function() {
       this._now = this._now || +new Date;
       var now = +new Date;
 
@@ -24,15 +26,24 @@
         this._fps = -1;
       }
 
-      this._fps++;
+      var nowTime = (new Date).getTime();
 
-      this._queue.forEach(function(handle) {
-        handle();
-      });
+      if (nowTime >= targetTime) {
 
-      requestAnimationFrame(loop.bind(this));
-    };
-    loop.call(this);
+        if (nowTime >= targetTime + this._interval) {
+          targetTime = nowTime + this._interval;
+        } else {
+          targetTime += this._interval;
+        }
+        this._fps++;
+        this._queue.forEach(function(handle) {
+          handle();
+        });
+      }
+
+      requestAnimationFrame(loop);
+    }).bind(this);
+    loop();
   };
 
   Timer.prototype.toggle = function() {
