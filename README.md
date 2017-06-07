@@ -5,8 +5,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/monitor.js.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/monitor.js
-[travis-image]: https://img.shields.io/travis/macacajs/monitor.js.svg?style=flat-square
-[travis-url]: https://travis-ci.org/macacajs/monitor.js
+[travis-image]: https://img.shields.io/travis/xudafeng/monitor.js.svg?style=flat-square
+[travis-url]: https://travis-ci.org/xudafeng/monitor.js
 
 > performance monitor for browser runtime
 
