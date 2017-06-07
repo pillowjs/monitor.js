@@ -1,3 +1,5 @@
+'use strict';
+
 ;(function() {
 
   function Timer(options) {
@@ -53,7 +55,6 @@
   var render = function() {
     var fps = this._fps;
     var context = this._context;
-    var _imgData;
     setTimeout(function() {
       var textHeight = 8;
       var padding = 2;
@@ -138,7 +139,7 @@
   };
 
   function Monitor() {
-  };
+  }
 
   Monitor.Timer = Timer;
   Monitor.FPSBoard = FPSBoard;

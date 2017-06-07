@@ -6,4 +6,6 @@ install:
 	@npm install
 jshint:
 	@${npm_bin}/jshint .
+server:
+	@${npm_bin}/startserver -p 8090
 .PHONY: test

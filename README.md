@@ -9,7 +9,7 @@
 
 ## Usage
 
-```js
+``` javascript
 var Timer = Monitor.Timer;
 var FPSBoard = Monitor.FPSBoard;
 ```
