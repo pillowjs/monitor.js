@@ -1,6 +1,14 @@
-'use strict';
-
-;(function() {
+;(function(root,factory){
+  'use strict';
+  if (typeof define === 'function' && define.amd) {
+    return define(['exports'], factory);
+  } else if (typeof exports !== 'undefined') {
+    return factory(exports);
+  } else {
+    factory(root['Monitor'] || (root['Monitor'] = {}));
+  }
+})(this, function (exports,undefined) {
+  'use strict';
 
   function Timer(options) {
     var opts = options || {};
@@ -141,7 +149,6 @@
   function Monitor() {
   }
 
-  Monitor.Timer = Timer;
-  Monitor.FPSBoard = FPSBoard;
-  window.Monitor = Monitor;
-})();
+  exports.Timer = Monitor.Timer = Timer;
+  exports.FPSBoard = Monitor.FPSBoard = FPSBoard;
+});

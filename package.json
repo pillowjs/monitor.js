@@ -1,10 +1,11 @@
 {
   "name": "monitor.js",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "monitor",
   "keywords": [
     "monitor"
   ],
+  "main": "monitor.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/xudafeng/monitor.js.git"
