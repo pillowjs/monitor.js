@@ -28,6 +28,10 @@
   Timer.prototype.start = function() {
     var targetTime = (new Date).getTime() + this._interval;
     var loop = (function() {
+      if (this._paused) {
+        return;
+      }
+      var that = this;
       this._now = this._now || +new Date;
       var now = +new Date;
 
@@ -54,6 +58,10 @@
       requestAnimationFrame(loop);
     }).bind(this);
     loop();
+  };
+
+  Timer.prototype.stop = function() {
+    this._paused = true;
   };
 
   Timer.prototype.toggle = function() {

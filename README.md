@@ -17,10 +17,6 @@ var Timer = Monitor.Timer;
 var FPSBoard = Monitor.FPSBoard;
 ```
 
-## TODO
-
-- paused
-
 ## CDN
 
 [npmcdn link](//npmcdn.com/monitor.js@latest/monitor.js)
