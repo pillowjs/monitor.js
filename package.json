@@ -1,6 +1,6 @@
 {
   "name": "monitor.js",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "performance monitor for browser runtime",
   "keywords": [
     "monitor"

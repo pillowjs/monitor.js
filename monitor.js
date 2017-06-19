@@ -28,7 +28,6 @@
   Timer.prototype.start = function() {
     var targetTime = (new Date).getTime() + this._interval;
     var loop = (function() {
-      var that = this;
       this._now = this._now || +new Date;
       var now = +new Date;
 
@@ -109,7 +108,9 @@
       'z-index': 999999
     };
 
-    Object.assign(styles, this.options.containerStyles);
+    for (var i in this.options.containerStyles) {
+      styles[i] = this.options.containerStyles[i];
+    }
 
     Object.keys(styles).forEach(function(key) {
       container.style.cssText += key + ':' + styles[key];
