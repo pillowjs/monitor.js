@@ -1,6 +1,6 @@
 {
   "name": "monitor.js",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "performance monitor for browser runtime",
   "keywords": [
     "monitor"
@@ -8,7 +8,7 @@
   "main": "monitor.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/monitor.js.git"
+    "url": "git://github.com/pillowjs/monitor.js.git"
   },
   "devDependencies": {
     "mocha": "^3.0.2",
