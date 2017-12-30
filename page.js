@@ -1,5 +1,7 @@
 'use strict';
 
+const Monitor = require('./monitor');
+
 var Timer = Monitor.Timer;
 var FPSBoard = Monitor.FPSBoard;
 
