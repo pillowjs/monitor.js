@@ -1,10 +1,10 @@
 .travis.yml
 test/
-docs/
-Makefile
-.jshintrc
-.jshintignore
+.eslintrc.js
+.eslintignore
 coverage/
+screenshots/
+reports/
 *.html
 *.sw*
 *.un~
