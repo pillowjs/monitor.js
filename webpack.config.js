@@ -1,11 +1,11 @@
-const path = require('path');
+'use strict';
 
-const pkg = require('./package');
+const path = require('path');
 
 module.exports = {
   entry: {
     page: path.resolve(__dirname, 'page'),
-    [pkg.name]: path.resolve(__dirname, 'monitor')
+    monitor: path.resolve(__dirname, 'monitor')
   },
   output: {
     path: path.resolve(__dirname, 'build'),
