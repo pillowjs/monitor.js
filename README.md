@@ -30,6 +30,18 @@ var FPSBoard = Monitor.FPSBoard;
 
 [npmcdn link](//npmcdn.com/monitor.js@latest/monitor.js)
 
+<!-- GITCONTRIBUTOR_START -->
+
+## Contributors
+
+|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|[<img src="https://avatars1.githubusercontent.com/u/800043?v=4" width="100px;"/><br/><sub><b>06wj</b></sub>](https://github.com/06wj)<br/>
+| :---: | :---: |
+
+
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto upated at `Fri Apr 20 2018 23:35:50 GMT+0800`.
+
+<!-- GITCONTRIBUTOR_END -->
+
 ## License
 
 The MIT License (MIT)
