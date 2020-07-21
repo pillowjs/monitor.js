@@ -6,9 +6,7 @@ import {
 } from './helper';
 
 describe('test/monitor.test.js', () => {
-
   describe('page func testing', () => {
-
     before(() => {
       return driver
         .initWindow({
