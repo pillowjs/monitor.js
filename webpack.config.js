@@ -16,15 +16,16 @@ module.exports = {
     umdNamedDefine: true
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.json$/,
-        loader: 'json',
+        loader: 'json-loader',
+        type: 'javascript/auto',
         exclude: /node_modules/
       }
     ]
