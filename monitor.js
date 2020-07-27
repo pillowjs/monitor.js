@@ -150,3 +150,4 @@ function Monitor() {
 
 exports.Timer = Monitor.Timer = Timer;
 exports.FPSBoard = Monitor.FPSBoard = FPSBoard;
+exports.MemoryStats = Monitor.MemoryStats = require('memory-stats-alt');

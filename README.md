@@ -22,9 +22,10 @@
 ## Usage
 
 ```javascript
-var Timer = Monitor.Timer;
-var FPSBoard = Monitor.FPSBoard;
+const { Timer, FPSBoard, MemoryStats } = Monitor;
 ```
+
+The builtin library memory-stats: https://github.com/xudafeng/memory-stats-alt.js
 
 ## CDN
 
