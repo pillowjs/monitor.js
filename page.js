@@ -2,9 +2,6 @@
 
 const Monitor = require('./monitor');
 
-const KB = 1024;
-const MB = KB * KB;
-
 const { Timer, FPSBoard, MemoryStats } = Monitor;
 
 const fpsBoard_1 = new FPSBoard({
