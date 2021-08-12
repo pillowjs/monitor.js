@@ -6,6 +6,9 @@
     "monitor"
   ],
   "main": "./build/monitor.js",
+  "files": [
+    "build/**/*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/pillowjs/monitor.js.git"

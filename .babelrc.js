@@ -1,4 +1,6 @@
-{
+'use strict';
+
+module.exports = {
   "presets": [
     "@babel/preset-env"
   ],
@@ -26,4 +28,4 @@
     "@babel/plugin-proposal-numeric-separator",
     "@babel/plugin-proposal-throw-expressions"
   ]
-}
+};

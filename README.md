@@ -6,15 +6,15 @@
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/monitor.js.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/monitor.js.svg
 [npm-url]: https://npmjs.org/package/monitor.js
-[travis-image]: https://img.shields.io/travis/pillowjs/monitor.js.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/pillowjs/monitor.js.svg
 [travis-url]: https://travis-ci.org/pillowjs/monitor.js
-[coveralls-image]: https://img.shields.io/coveralls/pillowjs/monitor.js.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/pillowjs/monitor.js.svg
 [coveralls-url]: https://coveralls.io/r/pillowjs/monitor.js?branch=master
-[node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg?style=flat-square
+[node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
 [node-url]: http://nodejs.org/download/
-[download-image]: https://img.shields.io/npm/dm/monitor.js.svg?style=flat-square
+[download-image]: https://img.shields.io/npm/dm/monitor.js.svg
 [download-url]: https://npmjs.org/package/monitor.js
 
 > performance monitor for browser runtime

@@ -1,12 +1,7 @@
-.DS_Store
 node_modules
-npm-debug.log
-.idea/*
-Thumbs.db
-coverage/
-screenshots/
-reports/
-.project
-build/
+coverage
+screenshots
+reports
+build
 *.sw*
 *.un~
