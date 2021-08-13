@@ -102,9 +102,12 @@ var create = function() {
     styles[i] = this.options.containerStyles[i];
   }
 
+  var cssText = '';
   Object.keys(styles).forEach(function(key) {
-    container.style.cssText += key + ':' + styles[key];
+    cssText += key + ':' + styles[key] + ';';
   });
+  container.className = 'monitor-fps-board';
+  container.style.cssText = cssText;
 
   container.addEventListener('click', function(e) {
     e.preventDefault();
@@ -117,7 +120,7 @@ var create = function() {
 
 function FPSBoard(options) {
   var opts = options || {};
-  opts.container = document.querySelector(opts.container) || document.body;
+  opts.container = opts.container instanceof HTMLElement ? opts.container : (document.querySelector(opts.container) || document.body);
   opts.width = opts.width || 80;
   opts.height = opts.height || 48;
   opts.alpha = opts.alpha || 0.9;
