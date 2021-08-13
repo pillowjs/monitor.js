@@ -4,6 +4,16 @@ const Monitor = require('./monitor');
 
 const { Timer, FPSBoard, MemoryStats } = Monitor;
 
+const stats = new MemoryStats({
+  containerWidth: 120
+});
+
+stats.domElement.style.position = 'absolute';
+stats.domElement.style.right = '0px';
+stats.domElement.style.top = '0px';
+
+document.querySelector('#test_memory').appendChild(stats.domElement);
+
 const fpsBoard_1 = new FPSBoard({
   containerStyles: {
     left: 0
@@ -24,6 +34,7 @@ const fpsBoard_2 = new FPSBoard({
 const timer_1 = new Timer();
 timer_1.update(function() {
   fpsBoard_1.tick();
+  stats.update();
 });
 
 timer_1.start();
@@ -36,18 +47,3 @@ timer_2.update(function() {
 });
 
 timer_2.start();
-
-const stats = new MemoryStats({
-  containerWidth: 120
-});
-
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.right = '0px';
-stats.domElement.style.top = '0px';
-
-document.querySelector('#test_memory').appendChild(stats.domElement);
-
-requestAnimationFrame(function rAFloop() {
-  stats.update();
-  requestAnimationFrame(rAFloop);
-});
